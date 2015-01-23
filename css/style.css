@@ -17,13 +17,14 @@
 	7.	Helpers
 
 ------------------------------------------------------------------------------------*/
-@font-face {
+/*@font-face {
 	font-family:'Adine_Kirnberg';
 	src: url('../fonts/Adine_Kirnberg.ttf');
     font-weight: normal;
     font-style: normal;
 
 }
+*/
 
 @font-face {
     font-family: 'ostrich_sansbold';
@@ -177,7 +178,7 @@ blockquote.caption-2:before {
 	margin: 10px 0 5px;
 }
 .date-container .day-year {
-	font-size: 12em;
+	font-size: 5em;
 }
 .date-container, .subline, .side-nav {
 	color: #987c61;
@@ -258,6 +259,13 @@ div[id*="section-"] {
 	margin: 2em 0 6em;
 	line-height: 2em;
 }
+.content-block-2 {
+	margin: 0.6em 0.6em;
+	line-height: 2em;
+}
+
+
+
 
 /*-----------------------------------------------------------------------------------*/
 /*	3.	Sidebar Styles
@@ -621,7 +629,7 @@ footer {
 	padding: 2em;
 }
 footer p {
-	font-size: 0.750em;
+	font-size: 0.525em;
 	margin-bottom: 0;
 }
 footer a {

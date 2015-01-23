@@ -16,14 +16,14 @@ $dessert 	= $_POST['dessert'];
 $attendance	= $_POST['radio'];
 
 // Check that all required inputs are not empty.
-if(empty($firstname) || empty($lastname) || empty($attendance) || empty($email) ) {
-    die('Please ensure all required inputs are provided.');
-}
+#if(empty($firstname) || empty($lastname) || empty($attendance) || empty($email) ) {
+#    die('Please ensure all required inputs are provided.');
+#}
 
 //Validates correct email formatting
-if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    die('Please use the correct format for your email and try again');
-}
+#if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+#    die('Please use the correct format for your email and try again');
+#}
 
 // Construct the message
 $message .= <<<TEXT
