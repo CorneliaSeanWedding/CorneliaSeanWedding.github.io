@@ -67,3 +67,4 @@ else {
 	//echo $firstname;
     die('Thanks for submitting your RSVP.');
 }
+

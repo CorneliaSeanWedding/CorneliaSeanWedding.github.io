@@ -52,8 +52,8 @@ body {
 }
 a {
 	color:#de675f;
-	/*font-family: 'Roboto Slab', serif;*/
-	font-family:'Adine_Kirnberg';
+	font-family: 'Roboto Slab', serif;
+	/*font-family:'Adine_Kirnberg';*/
 	-webkit-transition: all 300ms ease-out;
 	-moz-transition: all 300ms ease-out;
 	transition: all 300ms ease-out;

@@ -56,7 +56,8 @@
 		<aside class="large-3 columns hide-for-medium-down">	
 			<div class="side-nav-container nav">
 				<div class="shadow"></div>	
-				<h1 class="logo"><a href="#section-0">C S   </a></h1>							
+				<h1 class="logo"><a href="#section-0"><img src="img/SeanCornelia_back.jpg" alt="Placeholder" class="hero-unit fade-in"  width="50%" height="50%"/>
+				   </a></h1>							
 				<nav class="hide-for-large-down">
 					<ul class="side-nav primary-nav">
 						<li><a href="#section-1">Our Story</a></li>
@@ -348,8 +349,22 @@
 					<h2 class="section-title">Rsvp</h2>
 					<span class="hearts"></span>
 				</div>
+				 <form method='post' action='mailer.php' id='form'>
+        Name: <input type='text' name='name' required id='name'><br>
+        Email: <input type='email' name='email' required id='email'><br>
+        Gender: <select name='gender' id='gender'>
+            <option value='m'>Male</option>
+            <option value='b'>Bacon</option>
+            <option value='f'>Female</option>
+        </select><br>
+        Bacon: <input type='radio' class='bacon' name='bacon' value='smoked' checked> <input type='radio' class='bacon' name='bacon' value='unsmoked'><br>
+        Check Me: <input type='checkbox' id='checkme' name='checkme'><br>
+        <input type='submit' value='Send'>
+    </form>
 				<div class="small-12 large-10 large-centered columns">
-					<form data-abide method="POST" action="#" class="rsvp-form custom" id="js-form">
+					<!--<form data-abide method="POST" action="/mailer.php" class="rsvp-form custom" id="js-form">-->
+					<form method="POST" action="/mailer.php" class="rsvp-form custom" id="js-form">
+				
 						<fieldset class="rsvp-details">
 							<!-- Displays a global alert if required fields are missing -->
 							<div class="js-display"></div>
@@ -427,13 +442,7 @@
 							<span class="btn-label">Send</span>
 						</button>
 					</form>
-					<p>
-						For any questions please email us: </br>
-						<a href="mailto:sean.chang@duke.edu" title="E-mail Us">
-							sean.chang@duke.edu
-						</a>
-						<!--sean DOT chang AT duke DOT edu-->
-					</p>
+					
 				</div><!-- END .large-8 -->
 				
 		</div><!--END .row-->
@@ -461,19 +470,18 @@
 			Washington Duke Inn & Golf Club	301 Cameron Boulevard
 			(919) 490-0999; 1-800-443-3853</p>
 		<p class="subline">Parking</p>
-	</div>
-	
-					
-				
-					
-<ul class="icon">
-<li class="star">item 1</li>
-<li class="info">item 2</li>
-<li class="help">item 3</li>
-</ul>
-			
 
-				</div>
+		<p class="subline">Contact</p>
+			For any questions please email us: </br></br>
+						<a href="mailto:sean.chang@duke.edu" title="E-mail Us">
+							sean.chang @ duke.edu
+						</a>
+		</div>
+		<p>
+					
+						<!--sean DOT chang AT duke DOT edu-->
+					</p>
+		</div>
 	
 				
 		<script src="js/vendor/jquery.min.js"></script>
