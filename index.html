@@ -91,16 +91,26 @@
 				<div class="row divider date-section">
 					<div class="large-6 small-12 columns">
 						<div class="date-container col-1">
-						<span class="day-date">Sunday, April 26</span>
-							<span class="day-year accent">2015</span>
-						</div>
+							</div>
+						<div id="map-canvas" style="width:100%; height:600px;"></div>	
+						
 					</div>
 					<div class="large-6 small-12 columns">
+						
 						<div class="date-container col-2">
-								<span class="day-time">Four O’Clock in the evening</span>
+							<span class="day-date">Sunday, April 26</span>
+							<span class="day-year accent">2015</span>	
+						
+							<span class="day-time">Four O’Clock in the evening</span>
+						
 							<span class="day-location">Duke Chapel</span>
-							<span class="day-address">401 Chapel Dr, Durham, NC 27708</span>
-							<span class="day-meta">reception to follow</span>
+							<span class="day-address">401 Chapel Dr, Durham, NC 27708</span></br>
+							<span class= "day-meta">reception to follow at </span>
+							<span class="day-location">Duke Memorial UMC</span>
+							
+							<span class="day-address">504 West Chapel Hill Street, Durham, NC 27701</span>
+							<span class="day-meta"></span>	
+			
 						</div>
 					</div>
 				</div><!-- END .row -->
@@ -110,8 +120,11 @@
 				<a href="#section-6" class="button radius js-scroll">
 					<i class="fa fa-envelope"></i> <span class="btn-label">Click here to RSVP today</span>
 				</a>
-			</div><!-- END .callout -->
-
+				
+			</div>
+					<!-- END .callout -->
+			
+			
 			<div id="section-1" class="section-odd row">
 				<div class="section-title-container">				
 					<h2 class="section-title">Our Story</h2>
@@ -322,38 +335,7 @@
 				</div><!-- END .row -->				
 			</div><!-- END #section-4 -->
 
-			<div id="section-5" class="section-odd">
-				<div class="row">
-					<div class="section-title-container">				
-						<h2 class="section-title">Duke Chapel Choir</h2>
-						<span class="hearts"></span>
-					</div>
-					<div class="small-11 small-centered large-8 large-centered columns">			
-						<div class="flexslider">
-							<ul class="slides">
-								<li>
-									<img src="img/choir2.jpg" alt="Placeholder" />
-									<p class="flex-caption">
-										We are very honored to have Duke Chapel Choir sing for us in the wedding ceremony! Being in the choir for three years, this is not only..
-									</p>
-								</li>
-								<li>
-									<img src="img/Rodney.jpg" alt="Placeholder" />
-									<p class="flex-caption">
-										with Conductor Dr. Rodney Wynkoop
-									</p>
-								</li>
-								<li>
-									<img src="img/choir.jpg" alt="Placeholder" />
-									<p class="flex-caption">
-										service
-									</p>
-								</li>								
-							</ul>
-						</div><!-- END .flexslider -->
-					</div><!-- END .small-11 -->
-				</div><!-- END .row -->				
-			</div><!-- END #section-5 -->
+			
 			
 			<div id="section-6" >				
 				<div class="section-title-container">				
@@ -390,11 +372,11 @@
 							independent school education.
 						</li>	
 						
-						<li>
+						<!--<li>
 							<a href="http://www.urbanhope.us/info/" class="block-logo">
 								<img src="img/logo-4.png" alt="Logo" />
 							</a>A nonprofit organization mentors children living in Durham, particularly kids living near East Campus in a neighborhood called Walltown
-						</li>				
+						</li>	-->			
 					</ul>
 					<p class="content-block">
 					</p><!-- END .content-block -->
@@ -408,13 +390,12 @@
 				</div>
 				
 				<div class="small-12 large-10 large-centered columns">
-					<form method="POST" action="http://corneliaseanwedding.netau.net/mailer.php" class="rsvp-form custom" id="js-form">
-	
+						<form data-abide method="POST" action="http://corneliaseanwedding.netau.net/mailer.php" class="rsvp-form custom" id="js-form">			
 						<fieldset class="rsvp-details">
 							<!-- Displays a global alert if required fields are missing -->
 							<div class="js-display"></div>
 							<legend>
-								Kindly respond by <strong>January 15, 2015</strong>. We look forward to celebrating with you!
+								Kindly respond by <strong>March 14, 2014</strong>. We look forward to celebrating with you!
 							</legend>
 							<div class="row">
 								<div class="large-6 columns">
@@ -438,7 +419,10 @@
 									<label for="phone">Phone</label>
 									<input type="tel" class="input-field" id="phone" name="phone" value="" placeholder="A phone number is optional">
 								</div>
-							</div>							
+							</div>
+							 
+
+						</button>
 						</fieldset>
 						<fieldset class="rsvp-attendance">
 							<legend>Will you be attending?</legend>
@@ -449,7 +433,7 @@
 									<span class="radio-label">Accepts with Pleasure!</span>
 								</label>
 							</div>
-							<div class="large-6 columns"> 
+							<div class="large-6 columns">
 								<label for="radio2">
 									<input name="radio" type="radio" id="radio2" style="display:none;" value="Declines with Regret." required>
 									<span class="custom radio decline"></span>
@@ -457,22 +441,23 @@
 								</label>
 							</div>
 						</fieldset>
+						
 						<fieldset class="rsvp-meal-choice">
 							<legend>
-								Potluck time!
+								Please select your meal choices
 							</legend>
 							<div class="row">
 							    <div class="large-6 columns">
-							      <label for="main-course">Main or Dessert</label>
+							      <label for="main-course">Main</label>
 							      <select id="main-course" name="main-course">
 							        <option selected>None</option>
-							        <option>Main</option>
-							        <option>Dessert</option>
-							        <option>Soup</option>
+							        <option>Chicken</option>
+							        <option>Beef</option>
+							        <option>Vegetarian</option>
 							      </select>
 							    </div>
 							    <div class="large-6 columns">
-							      <label for="dessert">How many people</label>
+							      <label for="dessert">Dessert</label>
 							      <select id="dessert" name="dessert">
 							        <option selected>None</option>
 							        <option>Chocolate Cake</option>
@@ -481,16 +466,32 @@
 							      </select>
 							    </div>
 						    </div>				
-						</fieldset>		
-						<button type="submit" class="button radius" id="js-submit-btn">
-							<i class="fa fa-envelope"></i> 
-							<span class="btn-label">Send</span>
-						</button>
+						</fieldset>
+						 <td colspan="2" style="text-align:center">
+   <input type='submit' value='Send'>
+ 
+ </td>
+
 					</form>
-					
+			
+				
+ <form method='post' action='http://corneliaseanwedding.netau.net/contact.php' id='form'>
+        Name: <input type='text' name='name' required id='name'>
+        Email: <input type='email' name='email' required id='email'>
+        Gender: <select name='gender' id='gender'>
+            <option value='m'>Male</option>
+            <option value='b'>Bacon</option>
+            <option value='f'>Female</option>
+        </select><br>
+        Bacon: <input type='radio' class='bacon' name='bacon' value='smoked' checked> <input type='radio' class='bacon' name='bacon' value='unsmoked'><br>
+        Check Me: <input type='checkbox' id='checkme' name='checkme'><br>
+        <input type='submit' value='Send'>
+    </form>					
 				</div><!-- END .large-8 -->
 				
-		</div><!--END .row-->
+				
+
+</div><!--END .row-->
 		
 		
 <div id="section-8" class="section-odd">				
@@ -501,7 +502,7 @@
 		<p class="subline">Airport</p>
 		<p class="content-block">
 		From Raleigh-Durham International Airport: You can get a ride from the airport
-		(Raleigh-Durham International Airport) to Durham					
+		(Raleigh-Durham International Airport) to Durham. Duke University is around 30 mins driving distance from the airport.					
 		</p><!-- END .content-block -->
 		<p class="subline">Hotels</p>
 		<p class="content-block-2">
@@ -515,16 +516,101 @@
 			Washington Duke Inn & Golf Club	301 Cameron Boulevard
 			(919) 490-0999; 1-800-443-3853</p>
 		<p class="subline">Parking</p>
-
+		<p class="content-block-2"> Bryan center</p>
 		
 		
 		<p class="subline">Streaming</p>
 		<p class="content-block-2">
-		We will have Youtube live streaming during the ceremony. The specific link will be announced when the date approches. </p>
+		Youtube live stream link will be shared soon! </p>
 		<p class="subline">Contact</p>
-			For any questions please email us: </br></br>
+		<p class="content-block-2">
+			We'd love to get any feedback from you, feel free to contact us: 
+				<form name="contactform" method="post" action="http://corneliaseanwedding.netau.net/mailer2.php">
+			
+			<table align = "center" width="450px">
+			
+			<tr>
+			
+			 <td valign="top">
+			
+			  <label for="first_name">First Name</label>
+			
+			 </td>
+			
+			 <td valign="top">
+			
+			  <input  type="text" name="first_name" maxlength="50" size="30">
+			
+			 </td>
+			
+			</tr>
+			
+			<tr>
+			
+			 <td valign="top"">
+			
+			  <label for="last_name">Last Name</label>
+			
+			 </td>
+			
+			 <td valign="top">
+			
+			  <input  type="text" name="last_name" maxlength="50" size="30">
+			
+			 </td>
+			
+			</tr>
+			
+			<tr>
+			
+			 <td valign="top">
+			
+			  <label for="email">Email Address</label>
+			
+			 </td>
+			
+			 <td valign="top">
+			
+			  <input  type="text" name="email" maxlength="80" size="30">
+			
+			 </td>
+			
+			</tr>
+			
+			<tr>
+			
+			</tr>
+			
+			<tr>
+			
+			 <td valign="top">
+			
+			  <label for="comments">Comments</label>
+			
+			 </td>
+			
+			 <td valign="top">
+			
+			  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+			
+			 </td>
+			
+			</tr>
+			
+			<tr>
+			
+			 <td colspan="2" style="text-align:center">
+			
+			  <input type="submit" value="Submit"> 
+			 </td>
+			
+			</tr>
+			
+			</table>
+			
+			</form></p>
 						<!--<a href="mailto:" title="E-mail Us">-->
-							shihhan.chang @ gmail.com
+							
 						
 		</div>
 		<p>
@@ -532,6 +618,33 @@
 						<!--sean DOT chang AT duke DOT edu-->
 					</p>
 		</div>
+	
+	<div id="section-5" class="section-odd">
+				<div class="row">
+					<div class="section-title-container">				
+						<h2 class="section-title">Acknowledgement</h2>
+						<span class="hearts"></span>
+					</div>
+					<div class="small-11 small-centered large-8 large-centered columns">			
+						<div class="flexslider">
+							<ul class="slides">
+								<li>
+									<img src="img/choir2.jpg" alt="Placeholder" />
+									<p class="flex-caption">
+										We are very honored to have Duke Chapel Choir friends sing for us! 
+									</p>
+								</li>
+								<li>
+									<img src="img/Rodney.jpg" alt="Placeholder" />
+									<p class="flex-caption">
+										with Conductor Dr. Rodney Wynkoop
+									</p>
+								</li>
+							</ul>
+						</div><!-- END .flexslider -->
+					</div><!-- END .small-11 -->
+				</div><!-- END .row -->				
+			</div><!-- END #section-5 -->
 	
 				
 		<script src="js/vendor/jquery.min.js"></script>
@@ -543,8 +656,6 @@
 		<script src="js/vendor/jquery.nav.min.js"></script>
 		<script src="js/vendor/jquery.flexslider.js"></script>
 		<script src="js/custom.js"></script>
-			<div id="map-canvas" style="width:100%; height:500px;"></div>	
-			</div><!-- END .row -->
 			<footer class="section-odd"> 
 				<p class="copyright small-12 large-6 columns">
 					© 2015 Shih-Han Sean Chang / Template Design: <a href="http://themechills.com">Eternity </a>
