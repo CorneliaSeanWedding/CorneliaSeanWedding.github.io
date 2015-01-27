@@ -53,7 +53,7 @@ $subject = 'Wedding | A Guest has submitted their RSVP status.';
 $from = 'Cornelia & Sean Wedding';
 
 // Domain to show the email from
-$fromEmail = 'shchang831@gmail.com';
+$fromEmail = 'pingpong3mike@gmail.com';
 
 // Construct a header to send who the email is from
 $header = 'From: ' . $from . '<' . $fromEmail . '>';
