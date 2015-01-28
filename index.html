@@ -70,7 +70,6 @@
 						<li><a href="#section-6">Registry</a></li>
 						<li><a href="#section-7">Rsvp</a></li>
 						<li><a href="#section-8">Info</a></li>
-				
 					</ul>
 				</nav>
 				<span class="ribbon"></span>
@@ -107,7 +106,7 @@
 							<span class="day-address">401 Chapel Dr, Durham, NC 27708</span></br>
 							<span class= "day-meta">reception to follow at </span></br>
 							<span class="day-time">Six thirty </span>
-							<span class="day-location">Duke Memorial UMC</span>
+							<span class="day-location">Whitford hall, Duke Memorial UMC</span>
 							
 							<span class="day-address">504 West Chapel Hill Street, Durham, NC 27701</span>
 							<span class="day-meta"></span>	
@@ -237,24 +236,26 @@
 						<div class="flexslider">
 							<ul class="slides">
 								<li>
+									<img src="img/Melissa.jpg" alt="Placeholder" />
+									<p class="flex-caption">
+										Melissa Keenan. Melissa is my lab buddy. I knew her since 2011 (the year when she got engaged with her lovely husband Sean -- who is also in our wedding party!) We share the same row in lab, support each other to feel better in day-to-day life in the middle of dark valley of graduate school (no kidding!). Well, I mean we love science, but in the scale of everyday life, frustration is always our accompany. That's why having a smart and nice person being with me during the journey is definitely one of the most wonderful things in the world. Our big day (April 26th) is also Melissa and her dog Liam's birthday!
+									</p>
+								</li>
+
+								<li>
 									<img src="img/bridesmaid-1.jpg" alt="Placeholder" />
 									<p class="flex-caption">
 										Molly Matty It's my pleasure to introduce my bridesmaid of honor -- Ms. Molly Matty! Molly is in the same class with me in Duke Program in Genetics and Genomics. She is a creative and fun person, happy scientist (most of the time!), a runner, an expert in local and blue grass music, an enthusiastic teacher, and many more. She is the person taking care of me during the midst of wedding planning and giving me a lot of creative advice. Thanks Molly!
 									</p>
 								</li>
+	
 								<li>
 									<img src="img/bridesmaid-2.jpg" alt="Placeholder" />
 									<p class="flex-caption">
 										  Eva Hum. Eva is also in the same class with me in graduate school. She is the very first person I talk to in my program, and my intuition is proved to be right -- she is super nice and also very understanding whenever I run to her. In addition to a happy scientist, Eva is also a good baker and a good cook, my favorite dish so far is Lumpia! And she will bake my wedding cake!
 									</p>
 								</li>
-								<li>
-									<img src="img/bridesmaid-2.jpg" alt="Placeholder" />
-									<p class="flex-caption">
-										Melissa Keenan. Melissa is my lab buddy. I knew her since 2011 (the year when she got engaged with her lovely husband Sean -- who is also in our wedding party!) We share the same row in lab, support each other to feel better in day-to-day life in the middle of dark valley of graduate school (no kidding!). Well, I mean we love science, but in the scale of everyday life, frustration is always our accompany. That's why having a smart and nice person being with me during the journey is definitely one of the most wonderful things in the world. Our big day (April 26th) is also Melissa and her dog Liam's birthday!
-									</p>
-								</li>
-	
+						
 								<li>
 									<img src="img/bridesmaid-2.jpg" alt="Placeholder" />
 									<p class="flex-caption">
@@ -325,12 +326,6 @@
 										Richard	Opoku-Nsiah
 									</p>
 								</li>
-								<li>
-									<img src="img/groomsmen-.jpg" alt="Placeholder" />
-									<p class="flex-caption">
-											
-									</p>
-								</li>
 							</ul>
 						</div><!-- END .flexslider -->
 					</div><!-- END .small-11 -->
@@ -367,30 +362,50 @@
 							<div class="row">
 								<div class="large-6 columns">
 									<label for="email">Email</label>
-									<input type="email" class="input-field" id="email" name="email" value="" placeholder="name@yourdomain.com" required>
+									<input type="email" class="input-field" id="email" name="email" value="" placeholder="corneliasean@wedding" required>
 									<small class="error">Valid Email is required.</small>
 								</div>
 								<div class="large-6 columns">
-									<label for="phone">Phone</label>
-									<input type="tel" class="input-field" id="phone" name="phone" value="" placeholder="A phone number is optional">
+									<label for="saytous">Something wants to tell us : ) </label>
+									<input type="text" class="input-field" id="saytous" name="saytous" value="" placeholder="This column is optional">
 								</div>
 							</div>
 							 
 
 						</button>
 						</fieldset>
+						
+						
 						<fieldset class="rsvp-attendance">
-							<legend>Will you be attending?</legend>
+							<legend>Will you be attending our wedding?</legend>
+							<div class="large-6 columns">
+								<label for="radio3">
+									<input name="wedding_attendance" type="radio" id="radio1" style="display:none;" value="1" required>
+									<!--<span class="custom radio accept"></span>-->
+									<span class="radio-label">Accepts with Pleasure!</span>
+								</label>
+							</div>
+							<div class="large-6 columns">
+								<label for="radio4">
+									<input name="wedding_attendance" type="radio" id="radio2" style="display:none;" value="0" required>
+									<!--<span class="custom radio decline"></span>-->
+									<span class="radio-label">Declines with Regret.</span>
+								</label>
+							</div>
+						</fieldset>
+						
+						<fieldset class="rsvp-attendance">
+							<legend>and reception?</legend>
 							<div class="large-6 columns">
 								<label for="radio1">
-									<input name="radio" type="radio" id="radio1" style="display:none;" value="Accepts with Pleasure!" required>
+									<input name="reception_attendance" type="radio" id="radio1" style="display:none;" value="1" required>
 									<span class="custom radio accept"></span>
 									<span class="radio-label">Accepts with Pleasure!</span>
 								</label>
 							</div>
 							<div class="large-6 columns">
 								<label for="radio2">
-									<input name="radio" type="radio" id="radio2" style="display:none;" value="Declines with Regret." required>
+									<input name="reception_attendance" type="radio" id="radio2" style="display:none;" value="0" required>
 									<span class="custom radio decline"></span>
 									<span class="radio-label">Declines with Regret.</span>
 								</label>
@@ -399,27 +414,32 @@
 						
 						<fieldset class="rsvp-meal-choice">
 							<legend>
-								Please select your meal choices
+								Reception 
 							</legend>
 							<div class="row">
 							    <div class="large-6 columns">
-							      <label for="main-course">Main</label>
-							      <select id="main-course" name="main-course">
-							        <option selected>None</option>
-							        <option>Chicken</option>
-							        <option>Beef</option>
-							        <option>Vegetarian</option>
+							      <label for="main-course">How many people will come with you?</label>
+							      <select id="main-course" name="people">
+							        <option selected>Just by myself</option>
+							        <option>1</option>
+							        <option>2</option>
+							        <option>3</option>
+							        <option>4</option>
+							        <option>5</option>
+							        <option>6</option>
 							      </select>
+							  
 							    </div>
-							    <div class="large-6 columns">
-							      <label for="dessert">Dessert</label>
-							      <select id="dessert" name="dessert">
-							        <option selected>None</option>
-							        <option>Chocolate Cake</option>
-							        <option>Lemon Cheesecake</option>
-							        <option>Key Lime Pie</option>
-							      </select>
-							    </div>
+							
+							<div class="large-12 columns">
+									<label for="potlucke">IF you'll bring a dish to the potluck, what's the name of it? (Don't worry, we'll prepare enough foods!) </label>
+									<input type="text" class="input-field" id="potluck" name="potluck" value="" placeholder="Potluck is optional">
+							</div>    
+							<div class="large-12 columns">
+									<label for="request">Any Special request (e.g. babysitter)? </label>
+									<input type="text" class="input-field" id="request" name="request" value="" placeholder="Special request is optional">
+							</div>
+							    
 						    </div>				
 						</fieldset>
 						 <td colspan="2" style="text-align:center">
@@ -457,11 +477,14 @@
 			(919) 401-9660; 1-800-531-5900
 			Washington Duke Inn & Golf Club	301 Cameron Boulevard
 			(919) 490-0999; 1-800-443-3853</p>
-		<p class="subline">Parking</p>
+		<p class="subline">Parking - wedding</p>
 		<p class="content-block-2"> Bryan center</p>
 		
 		
-		<p class="subline">Streaming</p>
+		<p class="subline">Parking - reception</p>
+		<p class="content-block-2"> Bryan center</p>
+		
+		<p class="subline">Live Streaming</p>
 		<p class="content-block-2">
 		Youtube live stream link will be shared soon! </p>
 		<p class="subline">Contact</p>
@@ -480,7 +503,7 @@
 					<h2 class="section-title">Registry</h2>
 					<span class="hearts"></span>
 				</div>
-				<p class="subline">We are fortunately </p>
+				<p class="subline">We are fortunately to have  </p>
 				<div class="small-12 large-6 large-centered columns wrapper">				
 					<ul class="small-block-grid-1 large-block-grid-2 block-grid">
 						<li>
@@ -554,7 +577,7 @@
 		
 	<footer class="section-odd"> 
 				<p class="copyright small-12 large-6 columns">
-					© 2015 Shih-Han Sean Chang / Template Design: <a href="http://themechills.com">Eternity </a>
+					© 2015 Shih-Han Sean Chang /PHP hosting: 000webhost </br> Template Design: Eternity / Webspace: Github </a>
 					<!--/ Buy it on 
 					<a href="http://themeforest.net/user/nimbleo/portfolio?ref=nimbleo">ThemeForest</a>-->
 				</p>
