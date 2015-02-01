@@ -155,7 +155,10 @@ blockquote.caption-2:before {
 .date-container.col-1 {
 	border-bottom:1px solid #e4e4e4;
 }
-.date-container .day-date,
+.date-container .day-date{
+	font-family: 'Roboto Slab', serif;
+	font-size: 7em ;
+}
 .date-container .day-time {
 	font-family: 'Roboto Slab', serif;
 }
@@ -185,7 +188,7 @@ blockquote.caption-2:before {
 	margin: 10px 0 5px;
 }
 .date-container .day-year {
-	font-size: 5em;
+	font-size: 6em;
 }
 .date-container, .subline, .side-nav {
 	color: #987c61;
