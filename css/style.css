@@ -159,6 +159,9 @@ blockquote.caption-2:before {
 .date-container .day-time {
 	font-family: 'Roboto Slab', serif;
 }
+.date-container .day-time-small {
+	font-family: 'Roboto Slab', serif;
+}
 .date-container .day-address {
 	font-size: 1em;
 }
@@ -175,6 +178,10 @@ blockquote.caption-2:before {
 }
 .date-container .day-location {
 	font-size: 3.750em;
+	margin: 10px 0 5px;
+}
+.date-container .day-locationsmall {
+	font-size: 2.760em;
 	margin: 10px 0 5px;
 }
 .date-container .day-year {
