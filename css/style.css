@@ -441,7 +441,23 @@ label {
 	display: block;
 	margin-top: 1em;
 }
+.rsvp-attendance .radionew-label {
+	display: block;
+	margin-top: 1em;
+}
 
+form.custom .radionew {
+	border: solid 5px #e6e6e6;
+	height: 29px;
+	width: 30px;
+}
+form.custom .custom.radionew.checked:before {
+	top: 4px;
+	left: 5px;
+	background-color: #e6e6e6;
+	width: 10px;
+	height: 10px;
+}
 form.custom .radio {
 	border: solid 5px #e6e6e6;
 	height: 29px;
