@@ -43,7 +43,8 @@
 
         // set up css prereq's, inject tubular container and set up wrapper defaults
         $('html,body').css({'width': '100%', 'height': '100%'});
-        $body.prepend(tubularContainer);
+        $("#wrapper").append(tubularContainer);
+        //$body.prepend(tubularContainer);
         $node.css({position: 'relative', 'z-index': options.wrapperZIndex});
 
         // set up iframe player, use global scope so YT api can talk
