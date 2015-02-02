@@ -667,10 +667,17 @@ footer a {
 /*-----------------------------------------------------------------------------------*/
 /*	7.	Helpers
 /*-----------------------------------------------------------------------------------*/
-
-.wrapper {
-	padding: 0 1em!important;
+.erb-image-wrapper img{
+    max-width:50% !important;
+    margin-left: auto;
+    margin-right: auto;
+    height:auto;
+    display:block;
 }
+
+/*.wrapper {
+	padding: 0 1em!important;
+}*/
 .sep {
 	margin: 3em 0 2em;
 }
