@@ -671,7 +671,8 @@ footer a {
     max-width:50% !important;
     margin-left: auto;
     margin-right: auto;
-    height:auto;
+    /*height:auto;*/
+    vertical-align: top;
     display:block;
 }
 
