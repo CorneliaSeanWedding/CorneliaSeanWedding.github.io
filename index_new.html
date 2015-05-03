@@ -117,8 +117,9 @@
 							
 							<span class="day-address">504 West Chapel Hill Street, Durham, NC 27701</span>
 							<span class="day-meta"></span>	
-			
+						
 						</div>
+				
 					</div>
 				</div><!-- END .row -->
 		
@@ -808,13 +809,14 @@ Instead of a gift, as an alternative we encourage you to bring a dish to share a
 				</div><!-- END .row -->
 				<!--<a href=""  target= "_blank" class="button radius js-scroll">
 						<i class="fa fa-heart"></i><span class="btn-label">Poem</span>-->
-					</a>	
+					</a>
 	</div><!-- END #section-5 -->
 	
 		
-
 		
-	<footer class="section-odd"> 
+		
+	<footer class="section-odd">
+		
 				<p class="copyright small-12 large-6 columns">
 					© 2015 Shih-Han Sean Chang</br> PHP hosting: 000webhost // Template: Eternity //
 					Webspace: Github </a>
@@ -835,21 +837,31 @@ Instead of a gift, as an alternative we encourage you to bring a dish to share a
 		<script src="js/vendor/jquery.nav.min.js"></script>
 		<script src="js/vendor/jquery.flexslider.js"></script>
 		<script src="js/custom.js"></script>
-
+		
 		<script>
 			$(document).foundation();
 		</script>
 		
-		
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		      
-			ga('create', 'UA-62548520-1', 'auto');
-			ga('send', 'pageview');
+		<script type="text/javascript">
+			var montharray=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+			
+			function countup(yr,m,d){
+				var today=new Date()
+				var todayy=today.getYear()
+				if (todayy < 1000)
+				todayy+=1900
+				var todaym=today.getMonth()
+				var todayd=today.getDate()
+				var todaystring=montharray[todaym]+" "+todayd+", "+todayy
+				var paststring=montharray[m-1]+" "+d+", "+yr
+				var difference=(Math.round((Date.parse(todaystring)-Date.parse(paststring))/(24*60*60*1000))*1)
+				difference+=" days"
+				return difference
+			}
+			//enter the count up date using the format year/month/day
+			
 		</script>
+			
 		
 		<script type="text/javascript">
 		var sc_project=10247121; 
