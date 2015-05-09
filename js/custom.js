@@ -1,5 +1,6 @@
 $(document).ready(function() {
-
+	
+	
 	/*-----------------------------------------------------------------------------------*/
 	/*	Smooth Scroll
 	/*  Thanks to: https://github.com/davist11/jQuery-One-Page-Nav

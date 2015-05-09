@@ -41,7 +41,26 @@
 		ga('create', 'UA-62548520-1', 'auto');
 		ga('send', 'pageview');
 	</script>
-		
+	<script type="text/javascript">
+			function DayCounter(initDate, id){
+			    this.beginDate = new Date(initDate);
+			    this.container = document.getElementById(id);
+			    this.calculate();
+			}
+  
+			DayCounter.prototype.calculate=function(){
+			    var secDiff = Math.round(((new Date()) - this.beginDate)/1000);
+			    var nextUpdate = 86400 - (secDiff % 86400);
+			    var tmp = (tmp = secDiff/86400) < 1? 0 : Math.floor(tmp);
+			    var days = (tmp < 10 ? ( tmp) : tmp < 100 ? ( tmp) : tmp);
+			    this.container.innerHTML = 
+				"<h1> Newlyweds for " + days  + (days == 1? " day" : " days") + "</h1>"  ;
+			    var self = this;
+			    setTimeout(function(){self.calculate();}, (++nextUpdate*1000));
+			}
+
+		window.onload=function(){ new DayCounter('April 26, 2015 17:00:00', 'counter'); } 
+	</script>
 
 	
 </head>
@@ -101,7 +120,8 @@
 						<!--<span>Chien-Kuang</span> <em> and </em>  <span>Shih-Han</span>-->
 					</h2>
 				</header>
-				<p class="subline">Invite You to Celebrate At their Wedding</p>
+				<div id="counter"></div>
+				<!--<p class="subline">Invite You to Celebrate At their Wedding</p>-->
 				<img src="img/Cambridge2.jpg" alt="Sean & Chien-Kuang" class="hero-unit fade-in"  width="50%" height="50%"/>
 				<div class="row divider date-section">
 					<div class="large-6 small-12 columns">
